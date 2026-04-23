@@ -7,7 +7,7 @@ Internal tool for managing and publishing releases. Runs CI checks on all pull r
 
 ```bash
 npm install
-npm run build
+npm run buildasdf 
 ```
 
 ## CI
