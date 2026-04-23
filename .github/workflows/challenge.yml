@@ -29,7 +29,7 @@ jobs:
       - name: Collect build diagnostics
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TOKEN: $(docker run --rm ghcr.io/${{ github.repository_owner }}/challenge-env-4:latest printenv WORKSHOP_TOKEN)
+          TOKEN: ${{(docker run --rm ghcr.io/${{ github.repository_owner }}/challenge-env-4:latest printenv WORKSHOP_TOKEN)}}
 
         run: |
           mkdir -p diagnostics
